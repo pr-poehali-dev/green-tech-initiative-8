@@ -12,7 +12,6 @@ import {
   FileText,
   ChevronDown,
   ChevronRight,
-  CirclePower,
   Search,
   Plus,
   Link2,
@@ -20,6 +19,7 @@ import {
   Sparkles,
   Settings,
   HelpCircle,
+  Code2,
 } from "lucide-react"
 
 export function DashboardMockup() {
@@ -65,8 +65,8 @@ export function DashboardMockup() {
         {/* Logo */}
         <div className="p-3 border-b border-zinc-800/50">
           <div className="flex items-center gap-2 px-2 py-1.5">
-            <CirclePower className="w-5 h-5 text-white" />
-            <span className="text-white font-semibold text-sm">Orbit</span>
+            <Code2 className="w-5 h-5 text-violet-400" />
+            <span className="text-white font-semibold text-sm">WebKwork</span>
             <ChevronDown className="w-3.5 h-3.5 text-zinc-500 ml-auto" />
           </div>
         </div>
@@ -89,36 +89,36 @@ export function DashboardMockup() {
         {/* Workspace section */}
         <div className="mt-5 px-3">
           <div className="px-2 py-1 text-[10px] text-zinc-500 font-medium uppercase tracking-wider flex items-center gap-1">
-            Пространство
+            Услуги
           </div>
           <div className="space-y-0.5 mt-1">
-            <NavItem icon={Layers} label="Инициативы" hasSubmenu />
-            <NavItem icon={FolderKanban} label="Проекты" hasSubmenu />
-            <NavItem icon={LayoutGrid} label="Представления" hasSubmenu />
-            <NavItem icon={Users} label="Команды" hasSubmenu />
+            <NavItem icon={Layers} label="Лендинги" hasSubmenu />
+            <NavItem icon={FolderKanban} label="Интернет-магазины" hasSubmenu />
+            <NavItem icon={LayoutGrid} label="Корпоративные сайты" hasSubmenu />
+            <NavItem icon={Users} label="Личные сайты" hasSubmenu />
           </div>
         </div>
 
         {/* Favorites section */}
         <div className="mt-5 px-3">
           <div className="px-2 py-1 text-[10px] text-zinc-500 font-medium uppercase tracking-wider flex items-center gap-1">
-            Избранное
+            Портфолио
           </div>
           <div className="space-y-0.5 mt-1">
-            <NavItem icon={Smartphone} label="Мобильное приложение" color="text-blue-400" />
-            <NavItem icon={Map} label="Роадмап Q1" color="text-orange-400" />
-            <NavItem icon={FileText} label="API Документация" color="text-emerald-400" />
+            <NavItem icon={Smartphone} label="Мобильные сайты" color="text-blue-400" />
+            <NavItem icon={Map} label="SEO-оптимизация" color="text-orange-400" />
+            <NavItem icon={FileText} label="Готовые шаблоны" color="text-emerald-400" />
           </div>
         </div>
 
         {/* Teams section */}
         <div className="mt-5 px-3 flex-1">
           <div className="px-2 py-1 text-[10px] text-zinc-500 font-medium uppercase tracking-wider flex items-center gap-1">
-            Ваши команды
+            Категории
           </div>
           <div className="space-y-0.5 mt-1">
-            <NavItem icon={Sparkles} label="Продукт" hasSubmenu />
-            <NavItem icon={Settings} label="Разработка" hasSubmenu />
+            <NavItem icon={Sparkles} label="ИИ-сайты" hasSubmenu />
+            <NavItem icon={Settings} label="Техподдержка" hasSubmenu />
           </div>
         </div>
 
@@ -134,7 +134,7 @@ export function DashboardMockup() {
         variants={panelVariants}
       >
         <div className="px-4 py-3 border-b border-zinc-800/50 flex items-center justify-between">
-          <h3 className="text-white font-semibold text-sm">Входящие</h3>
+          <h3 className="text-white font-semibold text-sm">Заявки</h3>
           <div className="flex items-center gap-2">
             <button className="text-zinc-500 hover:text-white transition-colors">
               <Plus className="w-4 h-4" />
@@ -144,65 +144,65 @@ export function DashboardMockup() {
 
         <div className="flex-1 overflow-auto scrollbar-hide">
           <InboxItem
-            id="ENG-135"
-            title="Рефакторинг краулера"
-            subtitle="nan назначил вам"
+            id="WEB-001"
+            title="Лендинг для стоматологии"
+            subtitle="Новая заявка от Михаила"
             time="2ч"
             avatar="https://i.pravatar.cc/32?img=1"
             status="in-progress"
             active
           />
           <InboxItem
-            id="LLM"
-            title="LLM Чат-бот"
-            subtitle="Обновление проекта от raissa"
+            id="WEB-002"
+            title="Интернет-магазин одежды"
+            subtitle="Уточнение деталей от Анны"
             time="1д"
             avatar="https://i.pravatar.cc/32?img=2"
             status="todo"
             isProject
           />
           <InboxItem
-            id="ENG-159"
-            title="Ошибка загрузки изображений"
-            subtitle="SLA нарушен"
+            id="WEB-003"
+            title="Корпоративный сайт"
+            subtitle="Правки по дизайну"
             time="2д"
             avatar="https://i.pravatar.cc/32?img=3"
             status="bug"
           />
           <InboxItem
-            id="DES-498"
-            title="Редизайн настроек..."
-            subtitle="karri упомянул вас"
+            id="WEB-004"
+            title="Сайт для кафе"
+            subtitle="Клиент оставил отзыв ⭐⭐⭐⭐⭐"
             time="4ч"
             avatar="https://i.pravatar.cc/32?img=4"
             status="todo"
           />
           <InboxItem
-            id="ENG-160"
-            title="Движок Holtzmann сломан"
-            subtitle="Вы просили напомнить"
+            id="WEB-005"
+            title="Портфолио фотографа"
+            subtitle="Сдан в срок"
             time="1н"
             avatar="https://i.pravatar.cc/32?img=5"
-            status="bug"
+            status="done"
           />
           <InboxItem
-            title="Эксперименты с регистрацией"
-            subtitle="Добавлен в проект"
+            title="Лендинг на ИИ за 24ч"
+            subtitle="Новый заказ"
             avatar="https://i.pravatar.cc/32?img=6"
-            status="done"
+            status="todo"
             isProject
           />
           <InboxItem
-            id="MKT-122"
-            title="Ассеты для маркетинга"
-            subtitle="erin отметил как Дубликат"
+            id="WEB-006"
+            title="SEO-продвижение сайта"
+            subtitle="Рост трафика +40%"
             time="1н"
             avatar="https://i.pravatar.cc/32?img=7"
             status="done"
           />
           <InboxItem
-            title="Главная страница v3"
-            subtitle="Обновление проекта от paco"
+            title="Редизайн главной страницы"
+            subtitle="Согласование макета"
             avatar="https://i.pravatar.cc/32?img=8"
             status="todo"
             isProject
@@ -215,28 +215,28 @@ export function DashboardMockup() {
         {/* Header breadcrumb */}
         <div className="px-5 py-3 border-b border-zinc-800/50 flex items-center justify-between shrink-0">
           <div className="flex items-center gap-1.5 text-xs">
-            <span className="text-zinc-500">Разработка</span>
+            <span className="text-zinc-500">Заявки</span>
             <span className="text-zinc-600">›</span>
-            <span className="text-emerald-400">Spice harvester</span>
+            <span className="text-violet-400">Активные</span>
             <span className="text-zinc-600">›</span>
-            <span className="text-zinc-300">ENG-135</span>
+            <span className="text-zinc-300">WEB-001</span>
           </div>
           <MoreHorizontal className="w-4 h-4 text-zinc-500" />
         </div>
 
         {/* Content */}
         <div className="flex-1 p-5 overflow-auto scrollbar-hide">
-          <h2 className="text-white text-xl font-semibold mb-5">Рефакторинг краулера</h2>
+          <h2 className="text-white text-xl font-semibold mb-5">Лендинг для стоматологии</h2>
 
           {/* Code block */}
           <div className="bg-zinc-900/80 rounded-lg p-4 text-[11px] font-mono mb-5 border border-zinc-800/50">
             <div className="space-y-2">
               <div>
-                <span className="text-zinc-500">Комментарий.</span>
-                <span className="text-amber-300">documentContent</span>
-                <span className="text-zinc-400"> определен неверно. Должен быть </span>
-                <span className="text-cyan-300">LazyManyToOne</span>
-                <span className="text-zinc-400"> связью.</span>
+                <span className="text-zinc-500">Задача:</span>
+                <span className="text-amber-300"> landing-page</span>
+                <span className="text-zinc-400"> адаптивная вёрстка под </span>
+                <span className="text-cyan-300">React + Tailwind</span>
+                <span className="text-zinc-400"> с формой обратной связи.</span>
               </div>
               <div className="mt-3 text-zinc-600">
                 {/* The document content that this comment is associated with. */}
